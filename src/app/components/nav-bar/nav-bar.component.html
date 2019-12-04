@@ -1,0 +1,60 @@
+<style>
+  .usconav {
+    background-color: #8F141B;
+    /* box-shadow: 10px 10px 5px grey; */
+    z-index: 999;
+  }
+
+
+
+  .uscotextbotones{
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(223, 212, 166, 1);
+
+  }
+  a:hover .uscotextbotones{
+    color: rgb(185, 179, 152);
+  }
+  .usconavbtnRegister {
+  border: 0;
+  }
+  .usconavbtnLogin{
+    border: solid 0.8px #dfd4a6;
+  }
+
+
+</style>
+
+<nav class="navbar navbar-expand-lg usconav shadow">
+
+  <div class="ml-5">
+
+    <a routerLink="/">
+      <img src="../../../assets/img/logo.png" width="400" class="img-fluid" alt="Responsive image">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link btn mx-1 uscotextbotones" routerLink="/register">Registrate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn mx-1 uscotextbotones usconavbtnLogin" routerLink="/login">Inicia Sesion</a>
+        </li>
+      </ul>
+    </form>
+  </div>
+</nav>
