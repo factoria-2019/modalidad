@@ -1,38 +1,99 @@
 <div class="col-8 mx-auto my-5">
   <div class="d-flex justify-content-between">
       <h3 class="text-left">Identificacion del Semillero</h3>
-      <h5 class="text-right textOrderForm">Formulario 1/5</h5>
+      <h5 class="text-right textOrderForm">Formulario 1/4</h5>
 
   </div>
-    <form>
+    <form action="/register/02" method="POST">
         <div class="form-group">
             <label for="">Programa O departamento</label>
-           <select class="form-control" name="pro_dep" id="pro_dep" (change)="onChange($event)"
+           <select class="form-control" name="pro_dep" id="pro_dep" (change)="onChange($event)" required
            >
-             <option value="0">seleccione</option>
-           </select>
+             <option value="">seleccione</option>
+             <option value="1">tecnologia en agricultura</option>
+             <option value="2">matematica aplicada</option>
+             <option value="3">fisica </option>
+             <option value="4">biologia aplicada
+               </option>
+             <option value="5">ciencia politica
+               </option>
+             <option value="6">derecho
+               </option>
+             <option value="7">antropologia
+               </option>
+             <option value="8">Comunicacion Social y Periodismo
+               </option>
+             <option value="9">Psicologia
+               </option>
+             <option value="10">Administracion de empresas
+               </option>
+             <option value="11">Contaduria Publica
+               </option>
+             <option value="12">Economia
+               </option>
+             <option value="13">Administracion Turistica y hotelera
+               </option>
+             <option value="14">Licenciatura en Matematicas
+               </option>
+             <option value="15">Licenciatura en Lenguas Extranjeras con enfasis en ingles
+               </option>
+             <option value="16">Licenciatura en literatura y lengua castellana
+               </option>
+             <option value="17">Licenciatura en educacion infantil
+               </option>
+             <option value="18">Licenciatura en educacion artistica
+               </option>
+             <option value="19">Licenciatura en educacion fisica,recreacion y deportes
+               </option>
+             <option value="20">licenciatura en ciencias naturales y educacion ambiental
+               </option>
+             <option value="21">licenciatura en ciencias sociales
+               </option>
+             <option value="22">ingenieria agricola
+               </option>
+             <option value="23">ingenieria agroindustrial
+               </option>
+             <option value="24">ingenieria electronica
+               </option>
+             <option value="25">ingenieria civil
+               </option>
+             <option value="26">ingenieria de petroleos
+               </option>
+             <option value="27">ingenieria de software
+               </option>
+             <option value="28">tecnologia en desarrollo de software
+               </option>
+             <option value="29">tecnologia en obras civiles</option>
+
+            </select>
         </div>
 
         <div class="form-group">
             <label for="">Grupo de investigacion al que esta vinculado</label>
-            <select class="form-control" name="gru_inv" id="gru_inv" >
-              <option value="0">Seleccione</option>
+            <select class="form-control" name="gru_inv" id="gru_inv" required >
+              <option value="">Seleccione</option>
+              <option value="1">Opcion1</option>
+              <option value="2">Opcion2</option>
+              <option value="3">Opcion3</option>
             </select>
 
         </div>
 
         <div class="form-group">
             <label for="exampleInputEmail1">Nombre del semillero</label>
-            <select class="form-control" name="nom_sem" id="nom_sem" >
-              <option value="0">Seleccione</option>
+            <select class="form-control" name="nom_sem" id="nom_sem"  required>
+              <option value="">Seleccione</option>
+              <option value="1">Bpus</option>
+              <option value="2">Robotica</option>
             </select>
 
         </div>
 
         <div class="nav nav-pills nav-fill mt-5">
             <button type="submit" class="nav-item btn btnFormInscripcionCancel btn-lg mx-2">Cancelar Proceso</button>
-            <a class="nav-item btn btn-lg mx-2 btnFormInscripcion" routerLink="/register/02">Siguiente</a>
-        </div>
+
+            <input class="nav-item btn btn-lg mx-2 btnFormInscripcion" type="submit" value="Siguiente">
+          </div>
 
     </form>
 </div>
